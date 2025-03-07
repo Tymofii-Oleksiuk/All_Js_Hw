@@ -144,11 +144,11 @@ const products = [
 ];
 //! Код виконаного завдання
 const [
-    { name: nameProductA, price: priceProductA, quantity: quantityProductA },
-    { name: nameProductB, price: priceProductB, quantity: quantityProductB },
-    { name: nameProductC, price: priceProductC, quantity: quantityProductC },
-    { name: nameProductD, price: priceProductD, quantity: quantityProductD },
-  ] = products;
+  { name: nameProductA, price: priceProductA, quantity: quantityProductA },
+  { name: nameProductB, price: priceProductB, quantity: quantityProductB },
+  { name: nameProductC, price: priceProductC, quantity: quantityProductC },
+  { name: nameProductD, price: priceProductD, quantity: quantityProductD },
+] = products;
 
 console.log(nameProductA, priceProductA, quantityProductA);
 console.log(nameProductB, priceProductB, quantityProductB);
@@ -178,7 +178,10 @@ const account = {
 
   //todo:  Метод створює і повертає об'єкт транзакції.
   //todo:  Приймає суму і тип транзакції.
-  createTransaction(amount, type) {},
+  createTransaction(amount, type) {
+    const transaction = [];
+    return transaction;
+  },
 
   //todo:  Метод відповідає за додавання суми до балансу.
   //todo:  Приймає суму танзакції.
